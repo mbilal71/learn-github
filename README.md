@@ -1,77 +1,79 @@
 # Git
 Learn Git from Scratch with Muhammad Bilal Siddique
-# Install# Installations and project starter kits
+# Install # Installations and project starter kits
 
 ## Installations:
 
 1.  Install Git from (https://git-scm.com/) Latest source Release 2.43.0 Release Notes (2023-11-20).
-2.  https://github.com/mbilal71/learn-github/issues/1#issue-2092638567
-3.  To confirm installation open your terminal/ command prompt.And run:
 
-            `node -v`
+# Installlation process - Step by step.
+![git1](https://github.com/mbilal71/learn-github/assets/107579362/5ac21ab4-8b7f-4f7c-891c-df35a7916e94)
 
-    and
 
-        `npm -v`
 
-    "npm" is a package manager for Nodejs which is automatically installed with nodejs.  
-    **v10.2.0 till (16-nov-2023)**
+![git2](https://github.com/mbilal71/learn-github/assets/107579362/ad16c301-170d-4f2d-a7bb-36b62c79b511)
 
-4.  Run the following command to install [typescript](https://www.typescriptlang.org/play) globally:
 
-                `npm install -g typescript`
 
-or
+![git3](https://github.com/mbilal71/learn-github/assets/107579362/99296000-b6d5-4125-aede-df3352ac0d91)
 
-                `npm i -g typescript`
 
-The second one is shorthand working of both are same.
 
-**v5.2.2 till (16-nov-2023)**
+![git4](https://github.com/mbilal71/learn-github/assets/107579362/8a0b4182-e64a-4a4a-b023-876ba6c487dd)
 
-4.  Install [VS Code](https://code.visualstudio.com/),an IDE (Integrated Development Environment) for writing typescript.
 
-## Node Project Starter Kit
 
-1. First of all create a new folder or open an empty folder (select name for folder without space) in the VS CODE.
-2. Then open a new terminal. To open terminal you will see a button `terminal` at the top of you VS Code screen click on it and the `new terminal` or press
+![git5](https://github.com/mbilal71/learn-github/assets/107579362/1034efe9-ffb1-4733-b053-999d4dfa1a79)
 
-```shell
-ctrl + `
-```
 
-and run.(**`** key is present just under the **esc** key.)
-**Note (For windows users): By default the terminal profile in the VS code is set to _powershell_. In window powershell has n't much permissions to run typescript compiler. So kindly shift to command prompt or cmd.**
 
-3.                `npm init`
 
-    or
+![git6](https://github.com/mbilal71/learn-github/assets/107579362/dbce0203-b7f8-462a-8c7f-0c77b9e1c591)
 
-        `npm init -y`
 
-If you are running the first command it will ask you some questions for now ust press enter and go with default values. And the second command will do it automatically for you and after running the command you will get a `package.json` file.
 
-4.  After running it, run:
+2.  Launch Git Bash
 
-            `tsc --init`
 
-    A file name `tsconfig.json` will be created.
 
-5.  Now create a file of any name (without space in the name) with an extention of `.ts`. For example, `index.ts`
 
-6.  Code what ever you want or the assignment is given.
-7.  Run
+![git7](https://github.com/mbilal71/learn-github/assets/107579362/7e00a704-748a-4d15-bfab-92a46d5ea7d1)
 
-        `tsc`
 
-in the same terminal to compile code. After running command you will get file with `.js` extention. Note: the file name will be same as you named it in `.ts` extention. 8. Now run
 
-        `node fileName.js`
 
-(replace fileName with your file name). For example, in my case it will be `node index.js`.
+ After launching Git Bash proceed for the following commands at Git Bash prompt:-
+ 
+ 
 
-### Best of Luck!
-y case it will be `node index.js`.
+        `$ git -v`   # It will show the version of Git.
+
+        Get your user name and email from [Github](https://github.com/)
+
+        `$ git config --global user.name "Your user name"`
+
+        `$ git config --global user.email "Your email"`
+
+![GitBash](https://github.com/mbilal71/learn-github/assets/107579362/e8ec0680-9fec-4ffc-9b65-6e15b1ec7694)
+
+
+3.  Now open your vscode and go to terminal.
+
+4.  For every new project.
+            
+         `git init`
+                
+         `git remote add origin "https://github.com/mbilal71/learn-github.git"`
+            
+         `npm i -g typescript`
+5.  For every new change repeate these commands:-
+
+         `git add -A`
+    
+         `git commit -m "Name your Changes"`
+
+         `git push origin master`
+    
 
 ### Best of Luck!
 
