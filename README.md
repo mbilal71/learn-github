@@ -5,7 +5,8 @@ Learn Git from Scratch with Muhammad Bilal Siddique
 ## Installations:
 
 1.  Install Git from (https://git-scm.com/) Latest source Release 2.43.0 Release Notes (2023-11-20).
-2.  To confirm installation open your terminal/ command prompt.And run:
+2.  https://github.com/mbilal71/learn-github/issues/1#issue-2092638567
+3.  To confirm installation open your terminal/ command prompt.And run:
 
             `node -v`
 
@@ -16,7 +17,7 @@ Learn Git from Scratch with Muhammad Bilal Siddique
     "npm" is a package manager for Nodejs which is automatically installed with nodejs.  
     **v10.2.0 till (16-nov-2023)**
 
-3.  Run the following command to install [typescript](https://www.typescriptlang.org/play) globally:
+4.  Run the following command to install [typescript](https://www.typescriptlang.org/play) globally:
 
                 `npm install -g typescript`
 
