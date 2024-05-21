@@ -73,7 +73,107 @@ Learn Git from Scratch with Muhammad Bilal Siddique
          `git commit -m "Name your Changes"`
 
          `git push origin master`
+
     
+
+To change the branch of an existing repository on GitHub, you can either create a new branch, switch to an existing branch, or rename the current branch. Here are the steps for each scenario:
+
+### 1. Switch to an Existing Branch
+
+If you want to switch to an existing branch:
+
+1. **Fetch the latest changes from the remote repository:**
+    ```sh
+    git fetch
+    ```
+
+2. **List all branches (optional):**
+    ```sh
+    git branch -a
+    ```
+
+3. **Switch to the desired branch:**
+    ```sh
+    git checkout branch-name
+    ```
+
+4. **Pull the latest changes for that branch:**
+    ```sh
+    git pull origin branch-name
+    ```
+
+### 2. Create a New Branch
+
+If you want to create a new branch:
+
+1. **Create and switch to a new branch:**
+    ```sh
+    git checkout -b new-branch-name
+    ```
+
+2. **Push the new branch to the remote repository:**
+    ```sh
+    git push origin new-branch-name
+    ```
+
+3. **Set the upstream branch for the new branch:**
+    ```sh
+    git push --set-upstream origin new-branch-name
+    ```
+
+### 3. Rename the Current Branch
+
+If you want to rename the current branch:
+
+1. **Rename the current branch:**
+    ```sh
+    git branch -m new-branch-name
+    ```
+
+2. **Delete the old branch on the remote (if needed):**
+    ```sh
+    git push origin --delete old-branch-name
+    ```
+
+3. **Push the new branch to the remote:**
+    ```sh
+    git push origin new-branch-name
+    ```
+
+4. **Set the upstream branch for the renamed branch:**
+    ```sh
+    git push --set-upstream origin new-branch-name
+    ```
+
+### Example Steps in Detail:
+
+1. **Switch to an Existing Branch:**
+    ```sh
+    git fetch
+    git branch -a
+    git checkout existing-branch
+    git pull origin existing-branch
+    ```
+
+2. **Create a New Branch:**
+    ```sh
+    git checkout -b new-feature-branch
+    git push origin new-feature-branch
+    git push --set-upstream origin new-feature-branch
+    ```
+
+3. **Rename the Current Branch:**
+    ```sh
+    git branch -m new-branch-name
+    git push origin --delete old-branch-name
+    git push origin new-branch-name
+    git push --set-upstream origin new-branch-name
+    ```
+
+### Notes:
+
+- Make sure you have committed any changes before switching branches to avoid losing any work.
+- Renaming the default branch (usually `main` or `master`) on GitHub requires updating the default branch setting in the repository settings on GitHub as well.
 
 ### Best of Luck!
 
